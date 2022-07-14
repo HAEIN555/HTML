@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 만들기</title>
+
+</head>
+<body>
+    <h3>버튼</h3>
+    <hr>
+    <form>
+        <input type="text" size="10" value="">
+        검색 : <input type="button" value="q1"> <br>
+              <button type="button">q2</button> <br>
+        이미지 버튼 : <input type="image" src="다운로드 (2).png"  width="70"  height="70" alt="이미지 버튼">
+    </form>
+
+    <br>
+    <h3>체크박스</h3>
+    <form > <!--여러개 선택가능 -->
+        짜장면 <input type="checkbox" value="1">
+        짬뽕 <input type="checkbox" value="2">
+        탕수육 <input type="checkbox" value="3">
+        우동 <input type="checkbox" value="4" checked>
+    </form>
+    <br>
+    <h3>라디오 버튼</h3>
+    <form > <!--라디오 버튼은 하나만 선택가능-->
+        <input type="radio" name="china" value="1">
+        토르 <img src="../img2/짧토르.png" height="50" width="50" > <br>
+        <input type="radio" name="china" value="2">
+        배트맨 <img src="다운로드 (2).png"  height="50" width="50"> <br>
+        <input type="radio" name="china" value="3">
+        스파이더맨 <img src="../img2/톰홀랜드.png" height="50" width="50" > <br>
+        <input type="radio" name="china" value="4">
+        뱀파이어 <img src="../img2/robb.png" height="50" width="50" > <br>
+    </form>
+    <br>
+    <h3>콤보 박스</h3>
+    <form >
+        <select name="india">
+            <option value="1">토르</option>
+            <option value="2">배트맨</option>
+            <option value="3">스파이더맨</option>
+            <option value="4">뱀파이어</option>
+        </select>
+    </form>
+    <br>
+    <hr>
+    <h3>라벨을 이용한 버튼</h3>
+    <form > 
+        <label>
+        <input type="radio" name="china" value="1">
+        토르 <img src="../img2/짧토르.png" height="50" width="50" > <br>
+        </label>
+        <label>
+        <input type="radio" name="china" value="2">
+        배트맨 <img src="다운로드 (2).png"  height="50" width="50"> <br>
+        </label>
+        <label>
+        <input type="radio" name="china" value="3">
+        스파이더맨 <img src="../img2/톰홀랜드.png" height="50" width="50" > <br>
+        </label>
+        <label>
+        <input type="radio" name="china" value="4">
+        뱀파이어 <img src="../img2/robb.png" height="50" width="50" > <br>
+        </label>
+    </form>
+    <br>
+    <h3>색 선택</h3>
+    <hr>
+    <form>
+        색 선택
+        <input type="color" value="#00BFFF" onchange="document.body.style.color=this.value">
+    </form>
+    <br>
+    <hr>
+    <form>
+        <pre>
+        month : <input type="month" value="2022-07"> <br>
+        time :  <input type="time" value="17 :45"> <br>
+        local : <input type="detetime-local" value="2022-07-14T17:46:10.33"> <br>
+        </pre>
+    </form>
+</body>
+</html>
