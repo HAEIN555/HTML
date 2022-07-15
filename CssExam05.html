@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델</title>
+    <style>
+        body { background: ghostwhite;}
+        span { background: deepskyblue;}
+        .box {
+            background: yellow;
+            border-style :solid;
+            border-color: peru;
+
+            margin: 40px;/*흰색 여백*/
+            border-width: 40px;
+            padding: 30px;/*아마도 노란부분*/
+            }
+        .inner {
+            background: skyblue;
+            padding: 20px; 
+            margin: 30px;
+            border: 5px dotted yellowgreen; /*테두리를 점선으로 */
+            border-radius: 10px 100px; /*테두리를 둥굴게*/
+            }
+            p {
+                background :yellow;
+                width: 200px;
+                height: 60px;
+                padding: 10px;
+                border: 20px solid lightgray;
+            }
+            #round { border-image:url(../img2/border.png) 100 round;}
+            #repeat {border-image:url(../img2/border.png) 150 round;}
+            #stretch { border-image:url(../img2/border.png) 80 round;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>Hello WORLD</span>
+    </div>
+    <br>
+    <hr>
+    <p>margin 30px,padding 20px, border 5px color yellowgreen dotted </p>
+    <div class="inner">
+        <img src="../img2/짧토르.png" alt="토르">
+    </div>
+    <hr>
+    원본 이미지
+    <img src="../img2/border.png" alt="원본">
+    <hr>
+    <p>20*20크기의 흰색테두리를 가진 p태그</p>
+    <p id= "round">round 스타일</p>
+    <p id= "repeat">repeat 스타일</p>
+    <p id= "stretch">stretch 스타일</p>
+    
+</body>
+</html>

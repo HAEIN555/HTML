@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배치</title>
+    <style>
+        div {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            border: 1px solid lightcoral;
+            text-align: center;
+            color: white;
+            background: red;
+        }
+        #down:hover { /*다 붙여써야함!!!!*/
+            position: relative;
+            left: 20px;
+            top: 20px;
+            background: green;
+        }
+        #up:hover {
+            position: relative;
+            right: 20px;
+            bottom: 20px;
+            background: green;
+        }
+        #fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            padding: 5px;
+            background: blue;
+            color: white;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h3>상대 배치, relative</h3>
+    <div id="up">T</div>
+    <div id ="down">H</div>
+    <div id="up">A</div>
+    <div id ="down">N</div>
+    <div id="up">K</div>
+    <div id ="down">S</div>
+
+    <br>
+    <hr>
+    <img src="../img2/vikinicity.png" width="300">
+    <div id="fixed">vikinicity</div>
+</body>
+</html>
