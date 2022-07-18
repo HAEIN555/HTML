@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myid {
+            background: coral;
+            font-size: large;
+            font-weight: 200;
+            color: springgreen;
+        }
+    </style>
+    <script>
+        function doPrint() {
+            // 자바 스크립트는 중복 id를 인식하지 못학 가장 먼저 나오는 id값만 인식합니다.
+            document.getElementById("myid").innerHTML = "스크립트가 실행되었습니다.";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="myid">안녕하세요</h1>
+    <h1 id="myid">자바스크립트입니다.</h1>
+    <h1 id="myid">가장 많이 쓰는 스크립트 언어입니다!</h1>
+    <a href="#" onclick=doPrint()>스크립트함수호출</a>
+</body>
+</html>
