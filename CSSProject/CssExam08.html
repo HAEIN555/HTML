@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div 박스에 그림자 만들기</title>
+    <style>
+        .redBox {
+            box-shadow: 20px 20px yellow;
+        }
+        .blurBox {
+            box-shadow: 10px 10px 5px tomato;
+        }
+        .multiEffect {
+            box-shadow: 10px 10px 10px black,
+            0 0 25px blueviolet,
+            0 0 5px darkcyan;
+        }
+        div {
+            width: 150px;
+            height: 70px;
+            padding: 10px;
+            border: 15px solid lightcoral;
+            background-image: url("../img2/spongbob.png");
+            background-size: 170px 150px ;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h3>박스 그림자 만들기</h3>
+    <hr>
+    <div class="redBox">뚱이와 함께</div> <br>
+    <div class="blurBox">뚱이와 함께</div> <br>
+    <div class="multiEffect">뚱이와 함께</div> <br>
+    <br>
+    <hr>
+    <p style="cursor: progress;">프로그램 실행중 모양 커서</p>
+
+    <br>
+    <hr>
+    <div style="display: none;">display(none)</div>
+    <div style="display: inline; ">display(inline)</div>
+    <div style="display: inline-block;">display(inline-block)</div>
+</body>
+</html>

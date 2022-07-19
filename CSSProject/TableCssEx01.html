@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>표꾸미기</title>
+    <style>
+        table { border-collapse: ;}
+        td,th {
+            text-align: left;
+            padding: 10px;
+            height: 20px;
+            width: 100px;
+        }
+        thead, tfoot {
+            background: darkgoldenrod;
+            color: black;
+        }
+        tbody tr :hover {
+            background: pink;/*마우스를 올리면 핑크색으로 변한다!*/
+        }
+        tbody tr:nth-child(even) {
+            background-color: teal; /*짝수번째에 teal색깔로 배경이 칠해진다!*/
+        }
+        h3 {
+            text-align: center;
+            text-shadow: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>표꾸미기</h3>
+    <hr>
+    <table>
+        <caption>성적표</caption><!--제목-->
+        <thead><!--머리셀-->
+            <tr><th>이름</th><th>Java</th><th>Database</th></tr><!--table의 row-->
+        </thead>
+        <tbody>
+            <tr><td>신화산</td><td>90</td><td>90</td></tr>
+            <tr><td>신화사</td><td>60</td><td>80</td></tr>
+            <tr><td>유혜민</td><td>60</td><td>90</td></tr>
+            <tr><td>박유진</td><td>60</td><td>80</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><th>합계</th><th>350</th><<th>400</th></tr> 
+        </tfoot>
+    </table>
+</body>
+</html>

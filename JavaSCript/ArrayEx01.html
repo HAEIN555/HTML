@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+    <script>
+        // 자바 스크립트의 내장객체
+        // 값을 처리하기 위한 내장 객체
+        // Date,Array,String,Math
+
+        // 브라우저를 제어하기 위한 내장 객체
+        // window,location,history,navigator,screen
+
+        // Html 문서를 제어하기 위한 내장객체 
+        // document,image,form,frame
+    </script>
+    <script>
+        // 배열은 자료형이 같은 것을 여러개 묶어놓은 것!
+        // 배열의 생성
+        var myarray = new Array("홍길동","활빈당","보스");
+        var myarray1 = ["홍길동","활빈당","보스"]; //두가지 방법 모두 가능하다
+        
+        // 배열에 저장된 값을 읽기
+        document.write("<h1>"+myarray1[0]+"</h1>");
+        document.write("<h1>"+myarray1[1]+"</h1>");
+        document.write("<h1>"+myarray1[2]+"</h1>");
+
+        myarray1[0]="김수한무거북이와 두루미";
+        myarray1[1]="삼천갑자 동박삭";
+        myarray1[2]="치치카포사리사리센터워리워리 세브리캉";
+
+        document.write("<h1>"+myarray1[0]+"</h1>");
+        document.write("<h1>"+myarray1[1]+"</h1>");
+        document.write("<h1>"+myarray1[2]+"</h1>");
+
+        for(var i=0;i<myarray.length;i++){
+            document.write("<p>"+myarray1[i]+"</p>");
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

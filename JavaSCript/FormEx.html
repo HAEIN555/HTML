@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>회원가입</legend>
+            <div class="input_group first">
+                <label>이름</label>
+                <input type="text" name="user_name">
+            </div>
+            <div class="input_group">
+                <label>성별</label>
+                <label><input type="radio" name="gender" value="M">남자</label>
+                <label><input type="radio" name="gender" value="F">여자</label>
+            </div>
+            <div class="input_group">
+                <label>직업</label>
+                <select name="job">
+                    <option>-직업을 선택하세요-</option>
+                    <option value="dev">프로그래머</option>
+                    <option value="pub">퍼블리셔</option>
+                    <option value="ofc">사무직</option>
+                </select>
+            </div>
+            <div class="input_group">
+                <label>취미</label>
+                <label><input type="checkbox" name="hobby" value="음악">음악</label>
+                <label><input type="checkbox" name="hobby" value="운동">운동</label>
+                <label><input type="checkbox" name="hobby" value="미술">미술</label>                
+            </div>
+            <div class="input_group">
+                <label>&nbsp;</label>
+                <input type="submit" name="button" value="회원가입">
+                <input type="button"name ="button1"value="다시작성">
+              
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

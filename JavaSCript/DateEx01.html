@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 현재 요일을 출력
+        var days = ["일","월","화","수","목","금","토"];
+        var mydate = new Date();
+
+        var yy = mydate.getFullYear(); //월 0부터 시작 하니까 1을 증가시켜야한다!
+        var mm = mydate.getMonth()+1;
+        var dd = mydate.getDate();
+        var i = mydate.getDay();
+        var day = days[i];
+        var hh = mydate.getHours();
+        var mi = mydate.getMinutes();
+        var se = mydate.getSeconds();
+
+       
+       
+        // // 임의날자로 지정
+        // mydate.setFullYear(2045);
+        // mydate.setMonth(9)+1;
+        // mydate.setDate(5);
+        // mydate.setHours(5);
+        // mydate.setMinutes(12);
+        // mydate.setSeconds(10);
+
+        var result = yy+"-"+mm+"-"+dd+"-"+day+"요일"+hh+"시"+mi+"분"+se+"초";
+        document.write("<h1>"+result+"</h1>");    
+        
+
+
+        // 두날짜의 차이
+        var theday = new Date(2022,0,1); // 대소문자 구분하니까 똑바로 써라...진짜
+
+        var today = new Date();
+
+        var cnt = today.getTime()-theday.getTime();
+        
+        var dday = Math.floor(cnt / (24*60*60*1000));
+
+        document.write("<h1>올해는"+dday+"지났다</h1>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

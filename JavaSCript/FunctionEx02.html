@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str ="100+1";
+        document.write("<h1>"+str+"</h1>");
+        var result= eval(str);
+        document.write("<h1>"+result+"</h1>");
+        //eval은 자바스크립트에서 미리 만들어놓은 함수이다.
+        //eval 문자열을 수식으로 변환해주는 내장함수이다.
+
+        var value = "100";
+        var num1 = Number(value);
+        // Number() :안에 주어진 문자열의 변수가 숫자모양인 경우 실제 숫자형으로 변환해주는 것
+        var num2 = parseInt(value);
+        // parseInt() : 문자열의 변수가 숫자모양인 경우 실제 숫자형으로 변환해주는 것
+        var r1 = value+1; // 글자 +숫자라서 글자+글자 =모두 합친 글자가 된다!
+            document.write("<h1>"+r1+"</h1>");
+        var r2 = num1+1; // 숫자 +숫자
+        var r3 = num2+1; // 숫자 +숫자
+            document.write("<h1>"+r2+"</h1>");
+            document.write("<h1>"+r3+"</h1>");
+        
+        var valu = "100.6";
+        var n1 = Number(valu); // 실수형일때 문자열 그대로 실수값을 리턴한다!
+        var n2 = parseInt(valu); // parseInt는 정수값만 가져온다
+        
+        var res1 = n1+1;
+        var res2 = n2+1;
+        document.write("<h1>"+res1+"</h1>");
+        document.write("<h1>"+res2+"</h1>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
