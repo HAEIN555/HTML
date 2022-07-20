@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <script>
+        /* initPage에게는 "$"라는 객체(혹은 함수)가 파라미터로 전달됨
+            $ - JQuery의 모든 기능의 저장하고 있는 jQuery의 최상위의 객체다 
+
+        */
+        function initPage() {
+          //  var h1 = document.getElementById("hello"); // 자바스크립트로 사용한것
+          var h1 = $("#hello"); // 제이 쿼리 객체?????????????? 위의 코드와 똑같은거 
+          //  h1.innerHTML = "Hello JQuery";
+          h1.html ("#hello jquery"); // 위의 코드와 같은 내용이다 제이쿼리를 사용해서 만든
+
+        } //==> $ 
+          
+        //jQuery(initPage);
+
+
+        // 함수 이름 대신 함수 자체를 파라미터로 전달 
+        jQuery(function ($) {
+            var h1 = $("#hello");
+            h1.html("#hello jquery");  
+        }); 
+
+
+        // 페이지가 열리면서 자동으로 실행되는
+        //크로스 브로우징을 지원하는 코드임
+        $(function() {
+            $("#hello").html("HelloJquery");
+            alert($("text").html());
+        });
+
+
+        
+    </script>
+    <h1 id="hello"></h1>
+    <p id="text">안녕하세요 jquery</p>
+</head>
+<body>
+    
+</body>
+</html>
