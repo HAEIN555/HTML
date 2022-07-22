@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/event.css"> <!--css파일 사용-->
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script> <!--jquery사용-->
+
+    <script>
+        $(function () {
+            var index=1;
+            $("img").click(function () {
+               //index가 1 ~3을 순환하는 계산
+               index =(index %3) +1;
+               // 이미지 파일의 변경시킴
+               $(this).attr("src","../img/"+index+".jpg"); 
+            });
+        });
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>속성 제어</h1>
+    <p>클릭하세요</p>
+    <img src="../img/1.jpg" alt="이미지">
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 이벤트</title>
+   <link rel="stylesheet" type="text/css" href="../css/event.css"> <!--css파일 사용-->
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script> <!--jquery사용-->
+        <script>
+        $(function() {
+            //마우스 버튼을 누른경우
+            $("#input").mousedown(function(){
+                $("#result").html("Mouse Down Event");
+            });
+            //마우스 버튼을 누른상태에서 뗌
+            $("#input").mouseup(function(){
+                $("#result").html("Mouse up Event");
+            });
+            //마우스가 영역위에 있을때
+            $("#input").mouseenter(function(){
+                $("#result").html("Mouse enter Event");
+            });
+            // 마우스가 영역을 벗어났을때
+            $("#input").mouseleave(function(){
+                $("#result").html("Mouse leave Event");
+            });
+            // 마우스가 영역을 벗어났을때와 영역위에 있을때 한번에 처리하고 싶다면 hover를 사용해라!
+            // $("#input").hover(function(){
+            //     $("#result").html("Mouse leave Event");
+            // },
+            // function() {
+            //     $("#result").html("Mouse enter Event");
+            // });
+
+        });
+        </script>
+</head>
+<body>
+    <h1>마우스 이벤트</h1>
+    <div id="input">
+        Do it in Here !! 
+    </div>
+    <h2>결과</h2>
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/event.css"> <!--css파일 사용-->
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script> <!--jquery사용-->
+    <script>
+        $(function() {
+            //키가 눌러졌을때 카운트 변수 선언
+            var down_count =0;
+            //키가 떨어졌을때 카운트 변수 선언
+            var up_count =0;
+
+            $("#input > input[type='text']").keydown(
+                function() {
+                //down_count변수 증가 
+                down_count++;
+                $("#result").html("down_count :"+down_count+"/up_count :"+up_count);
+                }); //downcount는 눌렀을때
+
+                $( "#input > input[type='text']").keyup(
+                function() {
+                //down_count변수 증가 
+                up_count++;
+                $("#result").html("down_count :"+down_count+"/up_count :"+up_count);
+                });  // upcount는 자판에서 손을 뗐을때
+        });
+    </script>
+</head>
+<body>
+    <h1>Key Event</h1>
+    <div id="input">
+      <input type="text">
+    </div>
+    <h2>결과</h2>
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+   
+    <style>
+        div#container {
+            width: auto;
+            border: 5px solid #ff00ff;
+            padding: 10px;
+        }
+        div#container > h1#title {
+            background-color: #d5d5d5;
+            padding: 10px;
+        }
+        div#container div.box {
+            padding: 10px;
+            background-color: #ffff00;
+            font: 20px '궁서체';
+        }
+        div#container > ul {
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            width: auto;
+            border: 5px solid #00ff00;
+
+        }
+        div#container >ul > li:first-child,
+        div#container >ul >li:last-child {
+            border: 3px dotted red;
+            padding: 3px 10px;
+        }
+        pre {
+            font: 14px/130% 'Courier New';
+            background: #fff;
+            padding: 10px 20px;
+            margin: 10px auto;
+            border: 1px solid #555;
+            border-radius: 20px;
+        }
+
+    </style>
+     <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+     <script>
+        $(function(){
+            //id값에 의한 접근
+            $("#title").html("JQuery"); // 값만 가지고 들어온거
+            //자식 셀렉터의 사용 접근
+            $("div#container > h1#title").html("제이커리"); // 자식을 가지고 들어온거 이렇게 되면 첫번째값이 무시되면서 두번째 값이 사용되어짐
+            // 자손 셀렉터의 사용 접근
+            $("div#container div.box").html("제에에에이 커리");
+            // 자손 셀레거를 사용해서 모든 li태그를 지정하는것
+            $("ul > li").html("목록들입니다");
+            //li 태그의 첫번째 목록,마지막 목록에 적용
+            $("ul > li:first-child").html("나는 첫번째 항목");
+            $("ul > li:last-child").html("나는 마지막 항목");
+
+            // 두번째 li태그에 적용
+            // li :eq(n) n: index 표기하는 첫번째 0부터 시작함
+            $("ul >li:eq(1)").html("나는 두번째 항목입니다.");
+
+            // 다중요소 적용 방법
+            $("p,pre").html("여러가지 요소를 적용");
+            
+            $("pre[name='source']").html("속성을 이용한 저장방법");
+        });
+     </script>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title"></h1>
+        <div class="box"></div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <p></p>
+    <pre></pre>
+    <pre name="source"></pre>
+</body>
+</html>
