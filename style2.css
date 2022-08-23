@@ -1,0 +1,46 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh; 
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url(images/clouds.jpg);
+    z-index: 0;
+}
+
+.container .header {
+   
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between; 
+    z-index: 2;
+   
+    
+}
+.container .header .nav {
+    
+   flex: 40%;
+    justify-content: flex-end;
+    display: flex;
+    
+}
+.container .header .logo {
+    flex: 30%;
+    height: calc(50px-25px);
+}
+.nav >li {
+    margin-left: 12px;
+}
+.container .mediafilm {
+    z-index: 1;
+}
